@@ -13,7 +13,7 @@ namespace IFSPStore.Domain.Entities
         {
         }
         
-        public Produto(int id, string nome, float preco, int quantidade, DateTime datacompra, string unidadevenda)
+        public Produto(int id, string nome, float preco, int quantidade, DateTime datacompra, int unidadevenda)
         {
             this.Id = id;
             this.Nome = nome;
@@ -27,7 +27,7 @@ namespace IFSPStore.Domain.Entities
         public float Preco { get; set; }
         public int Quantidade { get; set; }
         public DateTime DataCompra {  get; set; }
-        public string UnidadeVenda { get; set; }
+        public int UnidadeVenda { get; set; }
 
     }
 }
