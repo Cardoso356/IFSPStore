@@ -1,11 +1,4 @@
-﻿using IFSPStore.domain.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IFSPStore.Domain.Base;
 
 namespace IFSPStore.Domain.Entities
 {
@@ -13,26 +6,27 @@ namespace IFSPStore.Domain.Entities
     {
         public Usuario()
         {
+
         }
 
-        public Usuario(int id, string nome, string senha, string login, string email, DateTime datacadastro, DateTime datalogin, bool binary)
+        public Usuario(int id, string nome, string senha, string login, string email, DateTime dataCadastro, DateTime dataLogin, bool ativo)
         {
-            int Id = id;
-            this.Nome = nome;
-            this.Senha = senha;
-            this.Login = login;
-            this.Email = email;
-            this.DataCadastro = datacadastro;
-            this.DataLogin = datalogin;
-            this.Binary = binary;
+            Id = id;
+            Nome = nome;
+            Senha = senha;
+            Login = login;
+            Email = email;
+            DataCadastro = dataCadastro;
+            DataLogin = dataLogin;
+            Ativo = ativo;
         }
 
-        public string Nome {  get; set; }
-        public string Senha { get; set; }
-        public string Login { get; set; }
-        public string Email { get; set; }
-        public DateTime DataCadastro { get; set; }
-        public DateTime DataLogin {  get; set; }
-        public bool Binary {  get; set; }
+        public string? Nome { get; set; }
+        public string? Senha { get; set; }
+        public string? Login { get; set; }
+        public string? Email { get; set; }
+        public DateTime? DataCadastro { get; set; }
+        public DateTime? DataLogin { get; set; }
+        public bool? Ativo {  get; set; }
     }
 }

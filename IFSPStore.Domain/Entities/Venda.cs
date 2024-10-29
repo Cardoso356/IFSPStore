@@ -1,9 +1,5 @@
-﻿using IFSPStore.domain.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using IFSPStore.Domain.Base;
+using System.Text.Json.Serialization;
 
 namespace IFSPStore.Domain.Entities
 {
@@ -11,26 +7,25 @@ namespace IFSPStore.Domain.Entities
     {
         public Venda()
         {
-            Items = new List<VendaItem>();
+            Itens = new List<VendaItem>();
         }
 
-
-        public Venda(int id, DateTime data, float valortotal, Usuario usuario, Cliente cliente, List<VendaItem> items)
+        public Venda(int id, DateTime data, float valorTotal, Usuario? usuario, Cliente? cliente, List<VendaItem> itens)
         {
-            this.Id = id;
-            this.Data = data;
-            this.ValorTotal = valortotal;
-            this.Usuario = usuario;
-            this.Cliente = cliente;
-            this.Items = items;
+            Id = id;
+            Data = data;
+            ValorTotal = valorTotal;
+            Usuario = usuario;
+            Cliente = cliente;
+            Itens = itens;
         }
-
-
         public DateTime? Data { get; set; }
         public float? ValorTotal { get; set; }
-        public virtual Usuario? Usuario { get; set; }
-        public virtual Cliente? Cliente { get; set; }
-        public virtual List<VendaItem> Items { get; set; }
+        public Usuario? Usuario { get; set; }
+        public Cliente? Cliente { get; set; }
+        public List<VendaItem> Itens { get; set; }
+
+
     }
 
     public class VendaItem : BaseEntity<int>
@@ -40,21 +35,21 @@ namespace IFSPStore.Domain.Entities
 
         }
 
-        public VendaItem(int id, Produto? produto, int quantidade, float valorunitario, float valortotal, Venda venda)
+        public VendaItem(int id, Venda venda, Produto produto, int quantidade, float valorUnitario, float valorTotal)
         {
-            this.Id = id;
-            this.Quantidade = quantidade;
-            this.Produto = produto;
-            this.ValorUnitario = valorunitario;
-            this.ValorTotal = valortotal;
-            this.Venda = venda;
+            Id = id;
+            Venda = venda;
+            Produto = produto;
+            Quantidade = quantidade;
+            ValorUnitario = valorUnitario;
+            ValorTotal = valorTotal;
         }
+        [JsonIgnore]
+        public Venda? Venda { get; set; }
+        public Produto? Produto { get; set; }
+        public int? Quantidade { get; set; }
+        public float? ValorUnitario { get; set; }
+        public float? ValorTotal { get; set; }
 
-
-        public virtual Produto? Produto { get; set; }
-        public int Quantidade { get; set; }
-        public float ValorUnitario { get; set; }
-        public float ValorTotal { get; set; }
-        public virtual Venda? Venda { get; set; }
     }
 }
