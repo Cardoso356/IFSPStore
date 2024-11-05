@@ -14,7 +14,7 @@ namespace IFSPStore.Test
     [TestClass]
     public class UnityTestRepository
     {
-        public object JsonSerialLizer { get; private set; }
+        //public object JsonSerialLizer { get; private set; }
 
         public partial class MyDbContext : DbContext
 

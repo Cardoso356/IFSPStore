@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.Domain", "IFSPStore.Domain\IFSPStore.Domain.csproj", "{F7B58A66-C61B-48CD-A04E-36C61C34C41A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Domain", "IFSPStore.Domain\IFSPStore.Domain.csproj", "{F7B58A66-C61B-48CD-A04E-36C61C34C41A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.Test", "IFSPStore.Test\IFSPStore.Test.csproj", "{5EB909B1-295F-4F5D-BA2B-5B5D2FD8F473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Test", "IFSPStore.Test\IFSPStore.Test.csproj", "{5EB909B1-295F-4F5D-BA2B-5B5D2FD8F473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.Repository", "IFSPStore.Repository\IFSPStore.Repository.csproj", "{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.Service", "IFSPStore.Service\IFSPStore.Service.csproj", "{2E49149E-D243-4FD1-B447-00C61CA2D871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{5EB909B1-295F-4F5D-BA2B-5B5D2FD8F473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EB909B1-295F-4F5D-BA2B-5B5D2FD8F473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EB909B1-295F-4F5D-BA2B-5B5D2FD8F473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
