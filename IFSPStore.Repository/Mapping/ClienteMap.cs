@@ -33,14 +33,14 @@ namespace IFSPStore.Repository.Mapping
                 .IsRequired()
                 .HasColumnType("varchar(100)");
 
-            builder.Property(prop => prop.Cidade)
+            /*builder.Property(prop => prop.Cidade)
                 .IsRequired()
-                .HasColumnType("varchar(100)");
+                .HasColumnType("varchar(100)"); */
 
             builder.HasOne(x => x.Cidade)
                 .WithMany()
-                .HasConstraintName("nome_chave_estrangeira");
-
+                .HasConstraintName("2");
+            
         }
     }
 }

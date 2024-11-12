@@ -18,6 +18,11 @@ namespace IFSPStore.Repository.Repository
             _MySqlContext.Attach(obj);
         }
 
+        public BaseRepository(MySQLContext MySqlContext)
+        {
+            _MySqlContext = MySqlContext;
+        }
+
         public void ClearChangeTracker()
         {
             _MySqlContext.ChangeTracker.Clear();
