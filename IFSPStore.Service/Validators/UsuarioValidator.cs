@@ -14,9 +14,9 @@ namespace IFSPStore.Service.Validators
         {
             RuleFor(c => c.Nome)
                 .NotEmpty().WithMessage("Por favor, informe o nome.")
-                .NotNull().WithMessage("Por favor, informe o nome.");
-                //.Length(50)
-                //.WithMessage("Nome pode ter no máximo 50 caracteres.");
+                .NotNull().WithMessage("Por favor, informe o nome.")
+                .MaximumLength(50)
+                .WithMessage("Nome pode ter no máximo 50 caracteres.");
 
             RuleFor(c => c.Email)
                 .EmailAddress().WithMessage("Por favor, informe o email.")
@@ -32,8 +32,7 @@ namespace IFSPStore.Service.Validators
                 .Matches(@"[\!\?\*\.]+").WithMessage("Sua senha tem que ter ao menos um caractere especial (!?*.).")
                 .NotEmpty().WithMessage("Por favor, informe a senha.")
                 .NotNull().WithMessage("Por favor, informe a senha.");
-                //.Length(100)
-                //.WithMessage("Senha pode ter no máximo 100 caracteres.");
+                
 
             
         }
