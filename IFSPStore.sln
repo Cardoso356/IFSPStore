@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Domain", "IFSPSto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Test", "IFSPStore.Test\IFSPStore.Test.csproj", "{5EB909B1-295F-4F5D-BA2B-5B5D2FD8F473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.Repository", "IFSPStore.Repository\IFSPStore.Repository.csproj", "{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Repository", "IFSPStore.Repository\IFSPStore.Repository.csproj", "{FE0B8F12-28B6-41F5-B358-9800ED4B60C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.Service", "IFSPStore.Service\IFSPStore.Service.csproj", "{2E49149E-D243-4FD1-B447-00C61CA2D871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IFSPStore.Service", "IFSPStore.Service\IFSPStore.Service.csproj", "{2E49149E-D243-4FD1-B447-00C61CA2D871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSPStore.App", "IFSPStore.App\IFSPStore.App.csproj", "{9AFF99D0-456B-4398-B8C2-B22B0B9867AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E49149E-D243-4FD1-B447-00C61CA2D871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFF99D0-456B-4398-B8C2-B22B0B9867AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFF99D0-456B-4398-B8C2-B22B0B9867AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFF99D0-456B-4398-B8C2-B22B0B9867AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFF99D0-456B-4398-B8C2-B22B0B9867AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

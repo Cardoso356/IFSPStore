@@ -26,7 +26,7 @@ namespace IFSPStore.Test
                 var port = "3306";
                 var database = "IFSPStore";
                 var username = "root";
-                var password = "cardoso"; //senha do MySQL
+                var password = "ifsp"; //senha do MySQL
                 var strCon = $"Server={server};Port={port};Database={database};Uid={username};Pwd={password};";
                 options.UseMySql(strCon, ServerVersion.AutoDetect(strCon), opt =>
                 {
@@ -165,7 +165,7 @@ namespace IFSPStore.Test
                 Quantidade = 2,
                 DataCompra = DateTime.Parse("2024-11-19 10:32:10"),
                 UnidadeVenda = "2"
-                //Grupo = 
+                //Grupo = 1
             };
             var result = produtoService.Add<Produto, Produto, ProdutoValidator>(produto);
             Console.Write(JsonSerializer.Serialize(result));
